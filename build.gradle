@@ -31,7 +31,6 @@ dependencies {
 
     testCompileOnly 'org.projectlombok:lombok:1.18.20'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
-    testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
 }
 
 test {
