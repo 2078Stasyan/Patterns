@@ -1,4 +1,4 @@
-package ru.netology;
+package ru.netology.delivery.test;
 
 import com.github.javafaker.Faker;
 import lombok.Value;
@@ -17,17 +17,17 @@ public class DataGenerator {
     }
 
     public static String generateCity(String locale) {
-        var faker = new Faker (new Locale(locale));
+        var faker = new Faker(new Locale(locale));
         return faker.address().city();
     }
 
     public static String generateName(String locale) {
-        var faker = new Faker (new Locale(locale));
+        var faker = new Faker(new Locale(locale));
         return faker.name().lastName() + " " + faker.name().firstName();
     }
 
     public static String generatePhone(String locale) {
-        var faker = new Faker (new Locale(locale));
+        var faker = new Faker(new Locale(locale));
         return faker.phoneNumber().cellPhone();
     }
 
